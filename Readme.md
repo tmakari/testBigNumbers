@@ -11,3 +11,47 @@ Web3.js v1.8.2
 ```
 truffle test test/testMul.test.js
 ```
+
+## result 
+```bash
+$ truffle test test/testMul.test.js
+Using network 'test'.
+
+
+Compiling your contracts...
+===========================
+> Compiling ./contracts/BigNumbers.sol
+> Compiling ./contracts/Crypto.sol
+> Compiling ./contracts/testMul.sol
+> Compilation warnings encountered:
+
+    Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.
+--> project:/contracts/testMul.sol
+
+,Warning: Function state mutability can be restricted to view
+ --> project:/contracts/testMul.sol:9:5:
+  |
+9 |     function testmul1() public returns (bytes memory){
+  |     ^ (Relevant source part starts here and spans across multiple lines).
+
+,Warning: Function state mutability can be restricted to view
+  --> project:/contracts/testMul.sol:19:5:
+   |
+19 |     function testmul2() public returns (bytes memory){
+   |     ^ (Relevant source part starts here and spans across multiple lines).
+
+
+> Artifacts written to /tmp/test--25702-fvdCsKYsk5o8
+> Compiled successfully using:
+   - solc: 0.8.17+commit.8df45f5f.Emscripten.clang
+
+
+  Contract: testMul
+result: 0x000000000000000000000000000000000000000000000000000000000017e602
+    ✔ test function testmul1 (51ms)
+result: 0x117b12d2a30d90780c94b1e4cca184946ce13f68a1efe8c5fc57e5d253cf1ddde4e13c8a17830c20caa12395de287187f19da2cbf9579cbcbad81cbcd390f3e0711894551edd48a855b134e007e09c48f9e53f9a97b84c11079c41b3408554f9c5b870420bf82deb10f841e3d9c7966962b7c8889a99484438ea7f294736da2bd9cf952fbf737a160b1fcee9d6c13ee28eba7cc8358fca401ab095a4317d9f2f7c3ae17979cd96995efae9f0f9b2b2f9e766233d983faca337b2c7e0942ffb456c1506edf3fed40d8ee9d41f0b7c6560c3c0ef017466ade93e8ea5d11492b6064d0aeb704041d0c051b804dadababb8a890055171423c5a1a7e61d7bece23ba9e8f9cbbff2685c1db5fe12471bc73ab8d5268935fd6d05990244c652cc7f9777777884fa0a5943fac2225ee9666a4b892553f8fe25d94bf36a3f8d119cbc93a5e016c9a76822473e2cf0ca32644730bc72164532731b3e3cd2b8aa425430d9c91aa9b2017158f1fbef0b7e7a27dc6107bdbdb3c46b4e10f21a79c06fa15df20568eaeaaba4ecb61e93fd5bddbe46cc4ad41fe6348efd1ce4c896ac1fff3bd8f8277e5640737719ff1358ee6b3bb2e0617a986d9155f0ec7c059ef29f04eeb3d81396d95ce97f96d6545884ae3e09df97118602726ba3bf58291fc840555f98cb1c72175277201201f0f3f98a8d46a75995aef560ce9c707364fc89e58a2a65c37ff4cc317506281593c25874fd35b7336f2166d4e94e888bad7e94ae1c9e0f26b9fcfb4c4eebbfa3462e0acf71ef43382a0233560411b5add36accbfb1662fe0226eeca0650f291cfd39228f14c6ac33d32b2ffdb7267b83423c224f52ea998bcdec0e52b4356797be39042f867f862ce5447dbbec7db58d765be145c6cc8e1f29d3cca962e05bcf5e56be33c99e4cfcca3a1710f607ae908f0d5c173b7f3958c50f5ec914d19402296a60ad55603e1c981c6b00d70e0c89ad3c73c826b7d7ab2e45c4af7bc19a51e1cf0fcb2081f9f03fb3bc2e9cdd59ff99914073b75d416b5102e0b4228101febed8b61c756c8dd2eb20642cd0fb3cf107d5d5b6e04abb7b8531f25db68cffa90d406cda5aa9a9f70ed54cb835d59c1bbd99a23e1535cfeaa42dd89bec3f76b909548fce40d2f8bf903551d4f1d0248c122bb33e199c21c7e9364a86347e49a1d5305399be8e75218c1ce40477dfac74414218c7042dea15a48ebb8ef6d03368c0d66c32b2ffc121c3b6067a82b62c3c34ecf20ae5e919452eac400e3c4cafc7e322d6ae5e22dc618eae5b1efb69f9292eb32c61a213f826aefb1b2d50a3eaa95bf0074caa96df0dccbf0cfc15a09f6aa7cf086338a8099881d690a213442121a522ce1badd08445883af37f020efbbe24a532b3e4d096e9b431cd7290223f9bb45b3c5946ccf3b1bf017d27ae36b82e3426107f67b44bd0ae4aac8ae4dcdfa3617e899b21c4210e388c4b095255f3ba7fa1e44ea0ca647c1896858a94a552e09ea2bf1dacb5a336f32ab6d2e8fceda3cbe85255907c7a06ecfdda11a8db2d6d4733a19779ea87035aa3009d3b25c4ed31ec9ce57668f6ec15a4ec7c6718c0703410d9c7fad5a75bdfe9f8bd5890a04965a5d2393ea80b9508490dbb18b0c5c1fe90a252c6c6c4d75a010f02531e8dd40cc7f375fce800b3d83cff2baaf433eefd6baf8cc78e6eae8302d94dad8e9cc527e19cbc6b0445626a2641485280e9e2bc5f9b25ba4f22ac06518b99262baff360ac34bc705e9be26b7d79024c6e0f0ef5a3b73f249a0320aa617728d9143950dca21bd5b8e2f34e7e98cd77bb2ba0856e4442a6e455de6543ae079466e65bc8f79df2962e0f75fad039180062142c493354576a21405623126c41f41bbbc2c0824a4a5998035d79fe846a5627d29a25631de5a1730c9aa13736448e40699370606d349d84022eb2fb1cc09f7304a08434c771201f0bbcf847872868e97e8465a5a1d4e57b92f47f86351f7d11b00341b3208ec5ca02e5dd1c5e95041c1e60f2f5b989fad8febe8ff99b409347a45f64651694fc94640c494e366fb69f486f96511e7dd06771203b02b9b85904863ab8576eddd1dccfbc7d8c2e5c27ec5081b0d0025d6296b369a4cba650a10d86284c81e94a80ca114a8879d7305a087725fd121fc9baa6da3337
+    ✔ test function testmul2 (68ms)
+
+
+  2 passing (162ms)
+```
